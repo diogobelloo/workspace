@@ -27,3 +27,6 @@ else if(quantidadeParcelas === 3 ){
 else if(quantidadeParcelas === 4 ){
     console.log(adicionandoJuros(precoEtiqueta, 10))
 }
+else{
+    
+}
