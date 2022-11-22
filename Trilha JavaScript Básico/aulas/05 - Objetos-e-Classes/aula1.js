@@ -1,3 +1,12 @@
+class Pessoa {
+    nome;
+    idade;
+    descrever(){
+
+    }
+}
+
+
 const pessoa = {
     nome: "Diogo belo dos santos",     //ex: nome => chave   ---- "Diogo belo dos santos" => Valor
     idade: 21,
