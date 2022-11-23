@@ -7,7 +7,7 @@ Instancie uma pessoa chamada Jos√© que tenha 70kg de peso e 1,75 de altura e pe√
 */
 
 
-class Pessoas{
+class Pessoa{
     nome;
     peso;
     altura;
@@ -19,9 +19,9 @@ class Pessoas{
     }
 
     calcularImc(){
-        return this.peso / this.altura * this.altura
+        return this.peso / (this.altura * this.altura)
     }
 }
 
-const Diogo = new Pessoas('Diogo', 63, 1.70)
-console.log(Diogo.calcularImc())
+const Diogo = new Pessoa('Diogo', 63, 1.70)
+console.log(Diogo.calcularImc()) 
