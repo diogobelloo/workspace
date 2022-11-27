@@ -27,6 +27,7 @@ function classificarImc(imc){
 
     const imc = peso / calcularImc(peso, altura) //altura ao quadrado
     console.log(classificarImc(imc))
+    
 })();
 
 
