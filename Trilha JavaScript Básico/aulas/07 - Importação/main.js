@@ -1,7 +1,42 @@
 const {gets, print} = require('./juncoes-auxiliares')   //importando minhas funções gets e print
 
-const pessoa = {
-    nome:'vitor'
-}
+print(gets());
+print(gets());
+print(gets());
+print(gets());
+print(gets());
+
+
+/* Uma sala contem 5 alunos e para cada aluno foi sorteado um numero de 1 - 100.
+Faça um programa e esreceva os 4 numeros sorteados para os alunos e mostre o maior numero sorteado.
+
+Dados de entrada:
+5
+50
+10
+98
+23
+
+
+Saída:
+98
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 print(gets());
