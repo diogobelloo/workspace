@@ -1,10 +1,30 @@
 const {gets, print} = require('./juncoes-auxiliares')   //importando minhas funções gets e print
 
-print(gets());
-print(gets());
-print(gets());
-print(gets());
-print(gets());
+
+const numerosSorteados = [];
+
+for (let i = 0; i < 5; i++) {
+  const numeroSorteado = gets();
+  numerosSorteados.push(numeroSorteado)
+    }
+
+
+    let maiorValor = 0
+    for (let i = 0; i < 5; i++) {
+        const numeroSorteado = gets();
+        
+          }
+      
+
+
+
+
+print(numerosSorteados);
+
+
+
+
+
 
 
 /* Uma sala contem 5 alunos e para cada aluno foi sorteado um numero de 1 - 100.
