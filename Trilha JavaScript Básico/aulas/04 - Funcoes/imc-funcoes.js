@@ -8,6 +8,7 @@ function classificarImc(imc){
     }
     else if(imc >= 18.5 && imc < 25){
         return 'peso normal'
+        
     }
     else if(imc >= 25 && imc < 30){
        return 'acima do peso'
