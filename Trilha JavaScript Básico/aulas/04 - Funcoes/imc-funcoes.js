@@ -15,6 +15,7 @@ function classificarImc(imc){
     }
     else if(imc >= 30 && imc <=   40){
         return 'acima do peso'
+        
     }
     else{
         return 'obesidade grave'
