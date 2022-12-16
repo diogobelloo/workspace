@@ -1,0 +1,26 @@
+
+  function soma(x, y){
+        if(typeof x !== 'number' || typeof y !== 'number'){
+            throw new Error('x e y precisam ser numeros');
+        }
+        return x + y;
+  }
+
+  try{
+    console.log(soma(1,2))
+    console.log(soma('1',2))
+  } 
+  catch(error) {
+    console.log('Alguma coisa mais amigável para nosso usuário.')
+  }
+
+
+
+
+  try {
+    //É executada quando não há erros
+   } catch (e){
+    //É executada quando há arros
+   } finally{
+    //Sempre
+   }
