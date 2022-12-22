@@ -1,12 +1,15 @@
 // new Date (0); 0123456
-function segundosRelogio(segundos){
-  let data = new Date(segundos * 1000);
-  return data.toLocaleTimeString('pt-BR', {
-    hour12:false,
-    timeZone:'UTC'
-  })
-}
- 
+
+  function criaHoraDosSegundos(segundos){
+    const data = new Date(segundos * 1000);
+    return data.toLocaleTimeString('pt-BR',{  //Estou pegando minha data e retornando um TmieString
+      hour12:false,
+      timeZone: 'GMT'     // Vai zerar a minha hora.
+    
+    })
+  }
+
+
   const relogio = document.querySelector('.relogio');
   const iniciar = document.querySelector('.iniciar');
   const pausar = document.querySelector('.pausar');
@@ -15,29 +18,31 @@ function segundosRelogio(segundos){
   let timer;
 
   function iniciaRelogio(){
-    timer = setInterval(() => {
-      segundos++
-      relogio.innerHTML = segundosRelogio(segundos)
-    }, 1000);
+      timer = setInterval(function() {
+      segundos++;
+      relogio.innerHTML = criaHoraDosdoSeguns(segundos);
+    }, 1000)
   }
 
-  iniciar.addEventListener('click', () => {
-    clearInterval(timer);
-    iniciaRelogio();
-    relogio.classList.remove('pausado')
-  })
-pausar.addEventListener('click', () => {
-    clearInterval(timer);
-    relogio.classList.add('pausado')
-  })
-zerar.addEventListener('click', () => {
-    clearInterval(timer);
-    segundos = 0;
-    relogio.innerHTML = '00:00:00'
-    relogio.classList.remove('pausado')
-  })
 
+iniciar.addEventListener('click', function(event){
+  relogio.classList.remove('pausado');
+  clearInterval(timer) //clear no iniciar para não ficar bugando e pulando se clicar duas ou + vezes
+  iniciaRelogio()
+});
+pausar.addEventListener('click', function(event){
+  relogio.classList.add('pausado');
+  clearInterval(timer);
   
+});
+zerar.addEventListener('click', function(event){
+  relogio.classList.remove('pausado');
+   clearInterval(timer);
+   relogio.innerHTML = '00:00:00'
+   segundos = 0;
+});
+
+
 /*
   document.addEventListener('click', function(e){
     const el = e.target;
