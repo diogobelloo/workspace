@@ -1,4 +1,4 @@
-function listtodo(){
+function listTodo(){
     const inputTarefa = document.querySelector('.input-nova-tarefa');
     const btnTarefa= document.querySelector('.btn-add-tarefa');
     const Tarefas = document.querySelector('.tarefas');
@@ -29,6 +29,7 @@ function listtodo(){
     botaoApagar.setAttribute('class', 'apagar');  //Adiciono uma classe para meu button com nome apagar
     botaoApagar.setAttribute('title', 'Apagar essa tarefa'); //Crio um title para minha button
     li.appendChild(botaoApagar);
+
     }
 
 
@@ -87,4 +88,4 @@ function listtodo(){
 
 
 }
-listtodo();
+listTodo();
