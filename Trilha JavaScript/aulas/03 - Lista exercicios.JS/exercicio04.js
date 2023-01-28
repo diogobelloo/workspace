@@ -3,6 +3,7 @@ const altura = 1.56
 
 const imc = peso / (altura * altura)
 
+
 if(imc < 18.5){
     console.log('abaixo do peso')
 }
