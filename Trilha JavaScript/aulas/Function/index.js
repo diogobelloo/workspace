@@ -17,7 +17,6 @@ livro.anunciar()
 class Livro {
     
     constructor(nome, editora, paginas){
-        
         this.nome = nome;
         this.editora = editora;
         this.paginas = paginas;

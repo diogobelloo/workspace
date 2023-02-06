@@ -1,38 +1,8 @@
-<<<<<<< HEAD
-
-=======
 function listTodo(){
->>>>>>> ff1ae0d66b5fe0bf95b47e071270b3b95e2565c9
     const inputTarefa = document.querySelector('.input-nova-tarefa');
     const btnTarefa= document.querySelector('.btn-add-tarefa');
     const Tarefas = document.querySelector('.tarefas');
 
-<<<<<<< HEAD
-    function criaTarefa(textoInput){
-        const li = document.createElement('li');
-        li.innerHTML = textoInput;
-        Tarefas.appendChild(li)
-        botaoApagar(li)
-    }
-
-    function botaoApagar(li){
-        li.innerHTML += ' '
-        const apagar = document.createElement('button');
-        apagar.innerHTML = 'apagar'
-        apagar.setAttribute('class', 'apagado');
-        li.appendChild(apagar)
-    }
-
-    btnTarefa.addEventListener('click', () => {
-        if(!inputTarefa.value) return;
-        criaTarefa(inputTarefa.value);
-    })
-
-    document.addEventListener('click', (e) => {
-        const el = e.target
-        if(el.classList.contains('apagado')){
-            el.parentElement.remove()
-=======
     //function
 
     inputTarefa.addEventListener('keypress', (e) => {   /*Keypress = ao prescionar da tecla é a ação de click com teclado*/
@@ -113,25 +83,9 @@ function listTodo(){
             console.log(el.parentElement) //Vê quem é o pai dele, no caso o meu button com a class apagar.
             el.parentElement.remove();   //Remover o meu elemento pai do meu apagar, quenop caso é minha <li>
             salvarTarefas();
->>>>>>> ff1ae0d66b5fe0bf95b47e071270b3b95e2565c9
         }
     })
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 }
 listTodo();
->>>>>>> ff1ae0d66b5fe0bf95b47e071270b3b95e2565c9

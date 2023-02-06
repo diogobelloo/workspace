@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 // new Date (0); 0123456
 
   function criaHoraDosSegundos(segundos){
@@ -11,52 +8,12 @@
     
     })
   }
->>>>>>> ff1ae0d66b5fe0bf95b47e071270b3b95e2565c9
 
 
   const relogio = document.querySelector('.relogio');
   const iniciar = document.querySelector('.iniciar');
   const pausar = document.querySelector('.pausar');
   const zerar = document.querySelector('.zerar');
-<<<<<<< HEAD
-
-  function horaRelogio(){
-    const data = new Date(segundos * 1000)
-    return data.toLocaleTimeString('pt-br', {
-      hour12:false,
-      timeZone: 'UTC'
-    })
-  }
-  let timer;
-  segundos = 0
-
-  function relogioInicia(){
-    timer = setInterval(() => {
-      relogio.innerHTML = horaRelogio()
-      segundos ++
-
-    }, 1000);
-    
-  } 
-
-  iniciar.addEventListener('click', () => {
-    clearInterval(timer)
-    relogioInicia()
-    relogio.classList.remove('pausado')
-  })
-
-pausar.addEventListener('click', () => {
-    clearInterval(timer)
-    relogio.classList.add('pausado')
-  })
-
- zerar.addEventListener('click', () => {
-    clearInterval(timer)
-    relogio.innerHTML = '00:00:00'
-    segundos = 0
-    relogio.classList.remove('pausado')
-  })
-=======
   let segundos = 0;
   let timer;
 
@@ -84,7 +41,6 @@ zerar.addEventListener('click', function(event){
    relogio.innerHTML = '00:00:00'
    segundos = 0;
 });
->>>>>>> ff1ae0d66b5fe0bf95b47e071270b3b95e2565c9
 
 
 /*
