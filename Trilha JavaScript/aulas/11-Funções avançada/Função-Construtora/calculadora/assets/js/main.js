@@ -1,5 +1,5 @@
 function Calculadora () {
-  this.display = document.querySelector('.display')
+C
 
   this.capturaEnter = () => {
     this.display.addEventListener('keypress', (e) =>{
@@ -31,8 +31,11 @@ function Calculadora () {
   }
 
   this.capturaCliques = () => {
+
     document.addEventListener('click', (event) => {
+
       const el = event.target;
+      
       if(el.classList.contains('btn-num')){this.addNumDisplay(el);}
       if(el.classList.contains('btn-clear')){ this.clear();}
       if(el.classList.contains('btn-del')){ this.del();}
