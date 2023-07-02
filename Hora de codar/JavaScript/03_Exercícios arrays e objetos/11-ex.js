@@ -1,6 +1,4 @@
-const arr = [1,2,3,4,5];
-
-for(let i = 0; i < arr.length ; i++){
-    let res = arr.length[i]
-    console.log(res)
+function getMaxOfArray(numArray) {
+    return Math.max.apply(null, numArray);
 }
+console.log(getMaxOfArray([1,2,4,6]))
