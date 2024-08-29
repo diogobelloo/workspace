@@ -1,4 +1,11 @@
+for(let i = 0 ; i <=100; i++){
+    let a = 8
+    console.log(i +" * "+ a + " = " +i * a)
+    
+}
 
-for (let x = 10; x <= 20; x ++) {
-    console.log("Teste ok")
+let i = 1
+while (i < 30) {
+    i++
+    console.log(i)
 }
