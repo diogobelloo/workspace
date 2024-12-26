@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blue;
+        color: white;
+    }
+</style>
+<body>
+    
+    <h1>iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aparecendo usar o DOM</p>
+    <div id="msg" >Clica em min</div>
+</body>
+<script>
+    var p1 = document.getElementsByTagName('p')[1]
+     document.write('Está escrito assim ' + p1.innerHTML);
+
+     var d = window.document.querySelector('div#msg')
+     d.style.background = 'red'
+     
+</script>
+</html>

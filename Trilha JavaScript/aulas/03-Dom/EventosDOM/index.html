@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div #area {
+            background: #008000;
+            width: 200px;
+            height: 350px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  
+    <input type="number" class="n1"> +
+    <input type="number" class="n2">
+    <input type="button" value="somar" onclick="somar()">
+   
+</body>
+<script>
+    function somar() {
+        var n1 = document.querySelector(".n1")
+        var n2 = document.querySelector(".n2")
+        let resSoma = document.createElement("p")
+        document.body.appendChild(resSoma)
+        n1 = Number(n1.value)
+        n2 = Number(n2.value)
+        soma = n1 + n2
+        resSoma.innerHTML= `Resultado de ${n1} + ${n2} é igual a = ${soma} `
+
+       
+    }
+    
+</script>
+</html>
