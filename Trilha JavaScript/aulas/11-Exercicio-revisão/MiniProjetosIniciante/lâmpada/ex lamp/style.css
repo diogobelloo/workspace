@@ -1,0 +1,12 @@
+main,header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main {
+    height: 70vh;
+}
+.ativo{
+    background-color: red;
+}

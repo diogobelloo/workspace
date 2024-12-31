@@ -15,6 +15,4 @@ else {
        list.appendChild(item);
     }
 }
-
-
 }

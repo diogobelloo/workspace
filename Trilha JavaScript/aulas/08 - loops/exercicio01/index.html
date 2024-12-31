@@ -13,13 +13,13 @@
             align-content: center;
             justify-content: space-around;
             width: 90vw;
-            height: 90vh;
+            height: 90vh;    
         }
 
-        div{
+        section{
             background-color: #fefefe;
             width: 400px;
-            height: 400px;
+            min-height: 400px;
             border-radius: 10px;
             padding: 10px;
             display: flex;
@@ -31,17 +31,15 @@
 </head>
 <body>
     <h1>Vamos contar</h1>
-    <div>
-        inicio :<input type="number" id="inicio">
-
-        fim: <input type="number" name="numero" id="fim">
-
-        passo: <input type="number" name="numero" id="passo">
+    <section>
+        <p>inicio :<input type="number" id="inicio"></p>
+        <p>fim:<input type="number" name="numero" id="fim"></p>
+        <p>passo: <input type="number" name="numero" id="passo"></p>
         <button id="button" onclick="contar()">Contar</button>
-    </div>
-    <ul id="lista">
-
-    </ul>
+        <p id="lista">
+    
+        </p>
+    </section>
 </body>
 <script src="./exercicioloops.js"></script>
 </html>
