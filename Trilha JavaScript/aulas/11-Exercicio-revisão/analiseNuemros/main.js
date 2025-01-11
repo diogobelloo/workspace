@@ -1,37 +1,36 @@
 //const NumberValue = document.getElementById('valueInp'); 
+const num = document.querySelector('#valueInp');
+const lista = document.querySelector('#select');
+const res = document.querySelector('#resList');
 const btnAdd = document.querySelector('#btnAdd');
-const select = document.querySelector('#select');
-const numberValue = document.querySelector('#valueInp');
-const result = document.querySelector('#resList');
 const btnList = document.querySelector('#btnList');
+let valores = []
 
 
-const addArray = (numberValue) => {
-    numberValue = Number(numberValue.value)
-    const arrayNumber = []
-    arrayNumber.push(numberValue)
-    return arrayNumber
+
+function isNumero(n){
+    if(Number(n) >= 1 && Number(n) <=100){
+        return true
+    }
+        else {
+            return false
+    }
 }
 
-const criaOption = () => {
-    //select.textContent ='' caso queira que seja adicinado e apagado.
-    if(numberValue.value == 0 || numberValue.value > 100){
-        window.alert('digite um número valido')
-        option.textContent = ' '
-    } 
-    const option = document.createElement('option');
-    option.textContent = `Valor adicionado foi : ${addArray(numberValue)}`
-    select.appendChild(option)
+function inLista(n, l){ //validção para vê se o numero não está em lista.
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }
+    else{
+        return false
+    }
 }
 
-const createResult = (arrayNumber) => {
-    const li = document.createElement("li");
-  
-    li.textContent = `Temos ao todo ${arrayNumber.length}`;
-    result.appendChild(li);
+function adicionar() {
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+        valores.push(Number(num.value))
+    }
+    else{
+        window.alert('Valor invalido ou já encontrado na lista.');
+    }
 }
- 
-btnAdd.addEventListener('click', criaOption)
-btnList.addEventListener('click', createResult)
-
-    
