@@ -26,6 +26,7 @@ function inLista(n, l){ //validção para vê se o numero não está em lista.
     }
 }
 
+
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)){
         valores.push(Number(num.value))
