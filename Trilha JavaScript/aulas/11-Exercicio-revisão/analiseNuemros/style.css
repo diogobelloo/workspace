@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; 
 }
 main{ 
     background-color: blue;
@@ -20,3 +21,25 @@ main{
     height: 300px;
 
 }
+
+select {
+    width: 200px; 
+    height: 100px; 
+    overflow-y: auto;
+    
+}
+select::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    
+}
+select::-webkit-scrollbar-track {
+    background: #ffffff; /* Cor do fundo do trilho */
+}
+select::-webkit-scrollbar-thumb {
+    background: #094d1d; /* Cor do scrool ao rolar */
+    border-radius: 4px; /* Arredondar o polegar */
+}
+li {
+    list-style: none;
+}
+/* Estilo para o polegar ao passar o mouse */
