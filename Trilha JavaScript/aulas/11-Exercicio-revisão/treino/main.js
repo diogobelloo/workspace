@@ -63,6 +63,7 @@ function finalizar () {
         textres.innerHTML += `<li>maior valor é igual a ${maior}.</li>`
         textres.innerHTML += `<li>menor valor é igual a ${menor}.</li>`
         finList.appendChild(textres)
+        
     }
     
     
