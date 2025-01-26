@@ -31,7 +31,7 @@ function lampbroken() {
 }
 
 function lampOnOff() {
-    if(!isLampbroken){
+  
     if(turnOn.textContent == 'ligar'){
         lampOn()
         turnOn.textContent = 'Desligar'
@@ -40,5 +40,5 @@ function lampOnOff() {
         lampOff()
         turnOn.textContent= 'ligar'
     }
-    }
+    
 }
