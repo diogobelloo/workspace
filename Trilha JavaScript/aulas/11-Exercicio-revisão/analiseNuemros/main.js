@@ -18,12 +18,12 @@ function isNumero(n){
     }
 }
 
-function inLista(n, l){ //validção para vê se o numero não está em lista.
+function inLista(n, l){ //validção para vê se o numero não está listado no array.
     if(l.indexOf(Number(n)) != -1){
         return true //foi encontrado
     }
      else{
-        return false //Não tem repetido, nao foi encontrado
+        return false //Não tem repetido, nao foi encontrado !
     }
 }
 
