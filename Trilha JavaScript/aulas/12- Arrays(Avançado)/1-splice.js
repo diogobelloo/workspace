@@ -1,16 +1,12 @@
 
 
-function texto(){
-    const texto = 'Diogo belo dos santos dias'
-    const textoArray =texto.split("")
-    console.log(textoArray)
-}
-console.log(texto())
+let fruits = ["maça", "uva", "pera", "morando"];
 
+let busca = fruits.indexOf("maça")
+console.log(busca)
 
+fruits.splice(busca,1)
+console.log(fruits)
 
-
-
-const numeros = [1,2,3,4,5,6,7]
-const remover = numeros.splice(-2, 2)
-console.log(numeros)
+//Remove um intem pela posição do iten
+//assim, se ele achar o item com nome "maça, ele ira removelo do array"

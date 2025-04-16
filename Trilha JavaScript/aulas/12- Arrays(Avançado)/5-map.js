@@ -1,19 +1,30 @@
 //Dobre os números
 //
-const numeros = [5,50,80,1,2,3,4,5,6,11,12,15,22,27,45];
- const dobro = numeros.map((valor) => {
-    return valor * 2
+const products = ["teclado", "mouse", "Monitor"];
+
+//Percorrendo os intens do array
+products.map((item) => {
+    console.log(item)
  });
-console.log(dobro)
 
 
+//utilizando novo objeto retorado
+const formatted = products.map((product) => {
+    //return product.toUpperCase()
+    return {
+        id:Math.random(),
+        description: product,
+    }
+
+})
+console.log(formatted)
 
 const pessoas = [
-    {nome: 'name', idade: 18},
-    {nome:'name', idade: 50},
-    {nome: 'name', idade: 81},
-    {nome:'name', idade: 54},
-    {nome: 'name', idade: 45}, 
+    {nome: 'Diogo', idade: 18},
+    {nome:'Belo', idade: 50},
+    {nome: 'norman', idade: 81},
+    {nome:'Leda', idade: 54},
+    {nome: 'Samuel', idade: 45}, 
 ]
 
 //Retorne apenas a uma string com o cnome da pessoa

@@ -44,3 +44,27 @@ const nomeTerminaComA = pessoas.filter((obj) =>{
 console.log(pessoaMaisCinquenta)
 console.log(nomeTerminaComA)
 
+
+const products = [
+    {description: "teclado", price:150, promotion: true },
+    {description: "Mouse", price:150, promotion: false },
+    {description: "tela", price:10, promotion: true }
+]
+
+const promotion = products.filter((product) => {
+    return product.promotion === true
+})
+
+const price = products.filter((product) => {
+   return  product.price < 150
+})
+
+const namesProduct = products.filter((product) => {
+    return product.description === "teclado"
+})
+
+console.log(products)
+console.log(price)
+console.log(promotion)
+console.log(namesProduct)
+
